@@ -1,0 +1,12 @@
+Q14: sWAP cASE
+
+swappedstring=""
+
+for char in string:
+	if char.isupper():
+		char = char.lower()
+	else: 
+		char = char.upper()
+swappedstring = swappedstring + char #swappedstring = swappedstring.join(char)
+
+return swappedstring
