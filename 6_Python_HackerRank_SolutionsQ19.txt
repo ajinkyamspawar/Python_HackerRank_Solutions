@@ -1,0 +1,11 @@
+
+Q19:String Validator
+
+s = input()
+print(any([i.isalnum() for i in s])) //not necessary to check all values to be true hence, any is used
+print(any([i.isalpha() for i in s]))
+print(any([i.isdigit() for i in s]))
+print(any([i.islower() for i in s]))
+print(any([i.isupper() for i in s])) 
+
+
