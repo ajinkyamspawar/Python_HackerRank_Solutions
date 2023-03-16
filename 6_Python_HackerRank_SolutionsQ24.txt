@@ -1,0 +1,15 @@
+Q24: Alphabet Rangoli
+def print_rangoli(size):
+    # your code goes here
+    alphabets = "abcdefghijklmnopqrstuvwxyz"
+    dataset = [alphabets [i] for i in range (n)]
+    items = list(range(n))
+    items = items [:-1] + items [::-1]
+    for i in items:
+        a = dataset[-(i+1):]
+        row = a[::-1]+a[1:]
+        print("-".join(row).center(n*4-3,"-"))
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
