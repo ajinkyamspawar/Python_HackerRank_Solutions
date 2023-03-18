@@ -1,0 +1,16 @@
+Q27: collections.counter()
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n = int(input())
+from collections import Counter
+STOCK = list (map(int, input().split()))
+dict = Counter(STOCK)
+p = 0 
+k= int(input())
+
+for i in range(k):
+    size, price=map(int,input().split())
+    if dict[size]:
+        dict[size] -=1
+        p = p+price
+print(p)
