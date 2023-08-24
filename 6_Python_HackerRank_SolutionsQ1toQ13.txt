@@ -14,6 +14,13 @@ if __name__ == '__main__':
     if n%2==0 and (n>20):
         print("Not Weird")
 Q5:
+Python Loop:
+if __name__ == '__main__':
+    n = int(input())
+    for  i in range (0,n):
+        print(i**2)
+        i=i+1
+
 Q6:
 Q7:
 Q8:
