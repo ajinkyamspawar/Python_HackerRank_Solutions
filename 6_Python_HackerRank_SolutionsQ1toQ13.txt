@@ -1,6 +1,20 @@
-Q1:
-Q2:
-Q3:
+Q1: Hello World: 
+print("Hello, World!")
+
+Q2: Arithmetic Operators: 
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a+b)
+    print(a-b)
+    print(a*b)
+
+Q3: Division Operators:
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a//b)
+    print(a/b)
 Q4:
 Python If-Else:
 if __name__ == '__main__':
@@ -21,11 +35,84 @@ if __name__ == '__main__':
         print(i**2)
         i=i+1
 
-Q6:
-Q7:
-Q8:
-Q9:
-Q10:
+Q6: Function:
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+     
+    if (year%400==0) :
+        leap = True
+    elif (year%4== 0) and (year%100 != 0):
+        leap = True
+        
+    return leap
+Q7: List Comprehension:
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    
+    #i=int(input(x))
+    #j=int(input(j))
+    #k=int(input(k))
+    l=[[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i+j+k!=n]
+    print(l)
+
+Q8: Find the Runnerup Score
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    print(sorted(set(arr))[-2]) 
+    
+   #One more way: 
+    '''for i in arr1:
+        if i==arr1:
+            arr1.remove(i)
+        l=arr1[i]
+    print(l)
+        for i in l:
+            print([:-2])'''
+
+
+Q9: Nested Lists:
+#Note: It is done in Pypy3
+if __name__ == '__main__':
+    marksheet=[]
+    scorecard=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        marksheet+=[[name,score]]
+        scorecard+=[score]
+    x=sorted(set(scorecard))[1]
+    
+    for n,s in sorted(marksheet):
+        if s==x:
+            print(n)
+        
+
+
+Q10:Find the Percentage:
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    sum=0
+    avg=0
+    for key, value in student_marks.items():
+        if(key==query_name):
+            for i in value:
+                sum=sum+i
+                avg=sum/len(value)
+    print(format(avg,'.2f'))
+                
+
 Q11:
 
 
